@@ -12,6 +12,10 @@ def say_hi_from_houdini():
     print("Hi from Houdini!")
     return("I said hi")
 
+def importFile(path):
+    print path
+    hou.hipFile.importFBX(path) 
+
 def create_node(path, type, name="NisseNode"):
     obj = hou.node(path)
     obj.createNode(type, name)
