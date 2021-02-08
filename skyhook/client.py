@@ -104,7 +104,7 @@ class Client(object):
         if self.echo_execution():
             pprint.pprint(response)
 
-        #return response
+        return response
 
     def __create_payload(self, command, parameters):
         """
